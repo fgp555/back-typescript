@@ -1,0 +1,36 @@
+### Obtener todos los usuarios (GET)
+GET http://localhost:3000/api/user
+Accept: application/json
+
+###
+
+### Obtener un usuario por ID (GET)
+GET http://localhost:3000/api/user/1
+Accept: application/json
+
+###
+
+### Crear un nuevo usuario (POST)
+POST http://localhost:3000/api/user
+Content-Type: application/json
+
+{
+  "name": "Jane Doe",
+  "email": "jane@example.com"
+}
+
+###
+
+### Actualizar un usuario existente (PUT)
+PUT http://localhost:3000/api/user/1
+Content-Type: application/json
+
+{
+  "name": "John Updated",
+  "email": "johnupdated@example.com"
+}
+
+###
+
+### Eliminar un usuario por ID (DELETE)
+DELETE http://localhost:3000/api/user/1
